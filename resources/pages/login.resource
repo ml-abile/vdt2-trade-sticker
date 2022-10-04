@@ -7,11 +7,13 @@ Library     Browser
 Go To Login Page
     New Page       https://trade-sticker-dev.vercel.app
 
-Submit Credentials
+Fill Credentials
     [Arguments]    ${email}                     ${senha}
     Fill Text      css=input[name=email]        ${email}
     Fill Text      css=input[name=password]     ${senha}
-    Click          css=button >> text=Entrar
+
+Submit Credentials
+   Click          css=button >> text=Entrar
 
 Toast Message Should Be
     [Arguments]    ${expected_message}
