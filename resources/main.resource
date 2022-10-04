@@ -10,7 +10,8 @@ Resource    pages/dash.resource
 
 Do Login
     Go To Login Page
-    Submit Credentials    papito@gmail.com    vaibrasil
+    Fill Credentials    papito@gmail.com    vaibrasil
+    Submit Credentials
     User Logged In
 
 Start Test

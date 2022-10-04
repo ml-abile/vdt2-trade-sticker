@@ -15,19 +15,19 @@ Deve logar com sucesso
 
 Não deve logar com senha incorreta
     Go To Login Page
-    Fill Credentials           papito@gmail.com                           abc123
+    Fill Credentials           papito@gmail.com    abc123
     Submit Credentials 
     Toast Message Should Be    Credenciais inválidas, tente novamente!
 
 Deve exibir notificação toaster se a senha não for preenchida
     Go To Login Page
-    Fill Credentials           papito@gmail.com                           ${EMPTY}
+    Fill Credentials           papito@gmail.com     ${EMPTY}
     Submit Credentials 
     Toast Message Should Be    Por favor, informe a sua senha secreta!
 
 Deve exibir notificação toaster se o email não for preenchido
     Go To Login Page           
-    Fill Credentials           ${EMPTY}                           vaibrasil
+    Fill Credentials           ${EMPTY}             vaibrasil
     Submit Credentials 
     Toast Message Should Be    Por favor, informe o seu email!
 
